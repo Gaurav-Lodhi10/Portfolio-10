@@ -94,7 +94,7 @@ export const BaseInfo = {
     {
       id: 1,
       title: "html",
-      image: "/images/HTML.svg",
+      image: "/images/html.svg",
       percent: "90%",
     },
     {
@@ -118,7 +118,7 @@ export const BaseInfo = {
     {
       id: 5,
       title: "C++",
-      image: "/images/Cpp.svg",
+      image: "/images/cpp.svg",
       percent: "67%",
     },
     {
