@@ -1,7 +1,12 @@
 import { BaseInfo } from "@/data/data";
 import React from "react";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaGithub, FaCode, FaWhatsapp, FaEnvelope } from "react-icons/fa"; // Add necessary icons
+import { GrLinkedin } from "react-icons/gr"; // LinkedIn icon
 import Image from 'next/image';
+import leetcode from "../../../public/images/leetcode.svg";
+import codechef from "../../../public/images/codechef.svg"
+import codeforces from "../../../public/images/codeforces.svg"
+
 
 const Hero = () => {
     return (
@@ -30,6 +35,63 @@ const Hero = () => {
                             <span>Download CV</span>
                             <FaDownload />
                         </a>
+                        {/* Social Links with Images */}
+                        <div className="mt-8 flex space-x-4">
+                            <a
+                                href="https://leetcode.com/u/Gaurav_Lodhi/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-2xl hover:text-blue-500"
+                            >
+                                <Image src={leetcode} alt="Leetcode Icon" width={30} height={30} />
+                            </a>
+                            <a
+                                href="https://www.codechef.com/users/lightcode_10"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-2xl hover:text-red-500"
+                            >
+                                <Image src={codechef} alt="Codechef Icon" width={30} height={30} />
+                            </a>
+                            <a
+                                href="https://codeforces.com/profile/RedCoder_10"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-2xl hover:text-blue-500"
+                            >
+                                <Image src={codeforces} alt="Codeforces Icon" width={30} height={30} />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/gauravlodhi/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-2xl hover:text-blue-700"
+                            >
+                                <GrLinkedin />
+                            </a>
+                            <a
+                                href="https://github.com/Gaurav-Lodhi10"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-2xl hover:text-gray-600"
+                            >
+                                <FaGithub />
+                            </a>
+                            <a
+                                href="mailto:gauravlodhi983@gmail.com"
+                                className="text-white text-2xl hover:text-yellow-400"
+                            >
+                                <FaEnvelope />
+                            </a>
+                            <a
+                                href="https://wa.me/+918595007855"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white text-2xl hover:text-green-500"
+                            >
+                                <FaWhatsapp />
+                            </a>
+                        </div>
                     </div>
                     <div data-aos="zoom-in" data-aos-delay="400" className="flex justify-center items-center">
                         {/* Center the image container */}
